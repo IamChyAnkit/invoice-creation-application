@@ -1,0 +1,17 @@
+
+{% extends "layout.html" %} 
+
+{% block body %}
+<center><h1>insert item list</h1></center>
+
+<form class="container"   method="post">
+
+  Item name: <input tabindex="1" type="text" name="item_name" required size="100"><br>
+  Qty per unit:  <input type="number" name="qty_per_unit"><br>
+  <button type="submit" name="button" value="product">Add product</button>
+  <button type="submit" name="button" value="summery">Add last product</button>
+ 
+  
+</form>
+
+{% endblock %}

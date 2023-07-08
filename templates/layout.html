@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    {% block title %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}" >
+
+  </head>
+  <body>
+      <nav>
+          <div class="logo">
+            <img src="#">
+          </div>
+          <ul>
+            <li><a href=#>Home</a></li>
+            <li><a href="{{ url_for('customer_details')}}">Customere</a></li>
+            <li><a class="nav-link" href="{{ url_for('invoice')}}">Invoice</a></li>
+            <li><a class="nav-link" href="{{ url_for('sale')}}">Itemlist</a></li>
+          </ul>
+      </nav>
+      <br><br><br><br>
+      {% block body %}{% endblock %}
+  </body> 
+
+</html>

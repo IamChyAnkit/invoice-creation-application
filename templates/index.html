@@ -1,0 +1,19 @@
+{% extends "layout.html" %} 
+
+
+
+{% block body %}
+<h1>THANKS</h1>
+<center><h1 class="title">{% block title %}index {% endblock%}</h1></center>
+<form class="container"  method="post">
+  First name: <input type="text" name="firstname" required size="100"><br>
+  Last name:  <input type="text" name="lastname" required size="100"><br>
+  Userid: <input type="text" name="userid" required size="15"><br>
+  Email: <input type="email" name="email" required><br>
+  Phone No: <input type="number" name="phone_no" required size="12"><br>
+  Address: <input type="text" name=" address"><br>
+  <button type="submit">Submit</button>
+  
+</form>
+{% endblock %}
+

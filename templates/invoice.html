@@ -1,0 +1,17 @@
+{% extends "layout.html" %} 
+
+{% block body %}
+<h1>insert item list</h1>
+<center><h1 class="title">{% block title %}invoice {% endblock%}</h1></center>
+<form class="container" method="post">
+  
+  <!-- Date: <input type="datetime" name="date" placeholder="YYYY-DD-MM"><br> -->
+  User id: <input type="text" name="userid" required size="15"><br>
+ 
+
+  <button type="submit">Submit</button>
+  
+</form>
+
+
+{% endblock %}

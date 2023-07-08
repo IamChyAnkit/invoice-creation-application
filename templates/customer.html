@@ -1,0 +1,17 @@
+
+{% extends "layout.html" %} 
+{%block body %}
+
+<center><h1 class="title">{% block title %}customer {% endblock%}</h1></center>
+<form class="container"  method="post">
+  First name: <input type="text" name="firstname" required size="100"><br>
+  Last name:  <input type="text" name="lastname" required size="100"><br>
+  Userid: <input type="email" name="userid" required size="15"><br>
+  Phone No: <input type="number" name="phone_no" required size="12"><br>
+  State: <input type="text" name="state"><br>
+  District: <input type="text" name="district"><br>
+  
+  <button type="submit">Submit</button>
+  
+</form>
+{% endblock %}
